@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default clh " role="navigation">
+	<!-- El logotipo y el icono que despliega el menú se agrupan
+	para mostrarlos mejor en los dispositivos móviles -->
+	<div class="navbar-header">
+		<a  href="./"><img src="public/img/header/logocarcajadas.png " max-height="373" max-width="437" class="img-responsive visible-lg ice" alt="INICIO"></a>
+		<a  href="./"><img src="public/img/header/logocarcajadas-mobil.png " height="373" width="437" class="img-responsive hidden-lg ice" alt="Imagen responsive"></a>
+		
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		<span class="sr-only">Desplegar navegación</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		</button>
+	</div>
+	
+	<!-- Agrupar los enlaces de navegación, los formularios y cualquier
+	otro elemento que se pueda ocultar al minimizar la barra -->
+	<div class="collapse navbar-collapse navbar-ex1-collapse">	
+		<form class="navbar-form navbar-right" role="search" method="post" name="form">
+			<div class="form-group">
+				<input type="email" class="form-control navbar-btn"  placeholder="E-mail" name="email">
+				<input type="password" class="form-control navbar-btn"  placeholder="Password" name="pass">
+			</div>
+			<div class="btn-group ">
+				<button type="button" class=" btn btn-success navbar-btn"data-toggle="modal" data-target="#myModal">registrarse</button>
+				<button type="button" class=" btn btn-success navbar-btn" onclick="logueo();">entrar</button>
+			</div>
+		</form>
+	</div>
+</nav>
+
+<?php require_once("modalr.phtml");?>
